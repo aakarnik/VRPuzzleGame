@@ -3,7 +3,12 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - projectile
+  - FxTemporaire
+  - puzpiece1
+  - Dial1
+  - Dial2
   layers:
   - Default
   - TransparentFX
