@@ -9,6 +9,17 @@ TagManager:
   - puzpiece1
   - Dial1
   - Dial2
+  - puzpiece2
+  - puzpiece3
+  - puzpiece4
+  - placer1
+  - placer2
+  - placer3
+  - placer4
+  - controller1
+  - controller2
+  - controller3
+  - controller4
   layers:
   - Default
   - TransparentFX

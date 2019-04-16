@@ -6,6 +6,7 @@ public class DialBlockController : MonoBehaviour //added to dials
 {
     public float unitsPerDegree = 0.001f;
     private GameObject mDial;
+    private GameObject mController;
     private GameObject mPuzPiece;
     private Vector3 mPrevDialRotation;
 
@@ -18,7 +19,9 @@ public class DialBlockController : MonoBehaviour //added to dials
     void Start()
     {
         mPuzPiece = GameObject.FindGameObjectWithTag("puzpiece" + PieceNumber).gameObject; //WORKED
-        mDial = GameObject.FindGameObjectWithTag("Dial" + DialNumber).gameObject; //WORKED
+        mController = GameObject.FindGameObjectWithTag("controller" + PieceNumber).gameObject;
+        //mDial = mController.FindGameObjectWithTag("Dial" + DialNumber).gameObject; //WORKED
+        mDial = mController.transform.Find("Dial" + DialNumber).gameObject; //Testing
         mPrevDialRotation = mDial.transform.localEulerAngles;
 
     }
