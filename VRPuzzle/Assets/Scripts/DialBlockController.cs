@@ -10,6 +10,7 @@ public class DialBlockController : MonoBehaviour //added to dials
     private GameObject mDial2;
 
     private GameObject mController;
+    private GameObject mBase;
     private GameObject mPuzPiece;
 
     private Vector3 mPrevDialRotation1;
@@ -32,9 +33,10 @@ public class DialBlockController : MonoBehaviour //added to dials
     {
         mPuzPiece = GameObject.FindGameObjectWithTag("puzpiece" + PieceNumber).gameObject;
         mController = GameObject.FindGameObjectWithTag("controller" + PieceNumber).gameObject;
+        mBase = mController.transform.Find("Base").gameObject;
 
-        mDial1 = mController.transform.Find("Dial" + DialNumber1).gameObject; //Testing
-        mDial2 = mController.transform.Find("Dial" + DialNumber2).gameObject; //Testing
+        mDial1 = mBase.transform.Find("Dial" + DialNumber1).gameObject; //Testing
+        mDial2 = mBase.transform.Find("Dial" + DialNumber2).gameObject; //Testing
 
         //getting both dials
         mPrevDialRotation1 = mDial1.transform.localEulerAngles;
@@ -57,41 +59,47 @@ public class DialBlockController : MonoBehaviour //added to dials
 
         if (curDialRotation1 != mPrevDialRotation1)
         {
-            float dialRotation = curDialRotation1.y - mPrevDialRotation1.y;
-           
-            if (mPrevDialRotation1.y > 270 && curDialRotation1.y < 90)
+            float dialRotation1 = curDialRotation1.y - mPrevDialRotation1.y;
+       
+        if (mPrevDialRotation1.y > 270 && curDialRotation1.y < 90)
             {
-                dialRotation += 360;
+                dialRotation1 += 360;
             }
             else if (mPrevDialRotation1.y < 90 && curDialRotation1.y > 270)
             {
-                dialRotation -= 360;
+                dialRotation1 -= 360;
             }      
             
-        }
         
+
+        float blockMoveDist1 = unitsPerDegree * dialRotation1;
+
+        mPuzPiece.transform.Translate(axis1 * blockMoveDist1);
+        mPrevDialRotation1 = curDialRotation1;
+
+        }
         if (curDialRotation2 != mPrevDialRotation2)
         {
-            float dialRotation = curDialRotation2.y - mPrevDialRotation2.y;
+            float dialRotation2 = curDialRotation2.y - mPrevDialRotation2.y;
+       
 
-            if (mPrevDialRotation2.y > 270 && curDialRotation2.y < 90)
+        if (mPrevDialRotation2.y > 270 && curDialRotation2.y < 90)
             {
-                dialRotation += 360;
+                dialRotation2 += 360;
             }
             else if (mPrevDialRotation2.y < 90 && curDialRotation2.y > 270)
             {
-                dialRotation -= 360;
+                dialRotation2 -= 360;
             }
 
-            float blockMoveDist1 = unitsPerDegree * dialRotation;
-            mPuzPiece.transform.Translate(axis1 * blockMoveDist1);
-            mPrevDialRotation1 = curDialRotation1;
+           
 
-            float blockMoveDist2 = unitsPerDegree * dialRotation;
+            float blockMoveDist2 = unitsPerDegree * dialRotation2;
+
             mPuzPiece.transform.Translate(axis2 * blockMoveDist2);
             mPrevDialRotation2 = curDialRotation2;
 
-
         }
+
     }
 }
