@@ -13,8 +13,8 @@ public class PuzzlePlacer : MonoBehaviour
     //set to the number of units the piece moves along both axis
 
     public float xTolerance = 0.001f;
-    public float yTolerance = 0.001f;
-    public float zTolerance = 0.001f;
+    private float yTolerance = .05f;
+    private float zTolerance = .05f;
 
     // Start is called before the first frame update
     void Start()
@@ -31,11 +31,20 @@ public class PuzzlePlacer : MonoBehaviour
         Vector3 piecePosition = puzzlePiece.transform.position;
         Vector3 placePosition = puzzlePlacementObj.transform.position;
 
+        
         if((piecePosition.x >= placePosition.x + xTolerance) &&
-                piecePosition.y <= (placePosition.y + yTolerance) || piecePosition.y >= (placePosition.y - yTolerance) &&
-                piecePosition.z <= (placePosition.z + zTolerance) || piecePosition.z >= (placePosition.z - zTolerance)) {
+                piecePosition.y < (placePosition.y + yTolerance) && piecePosition.y > (placePosition.y - yTolerance) &&
+                piecePosition.z < (placePosition.z + zTolerance) && piecePosition.z > (placePosition.z - zTolerance)) {
             return true;
         }
+
+        /*
+    if ((piecePosition.x >= placePosition.x) &&
+            piecePosition.y == (placePosition.y) &&
+            piecePosition.z == (placePosition.z))
+    {
+        return true;
+    } */
         return false;
     }
 
