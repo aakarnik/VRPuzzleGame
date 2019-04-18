@@ -10,29 +10,30 @@ public class SimpleBlockPuzzleController : MonoBehaviour
     private GameObject mBlueBlock;
     private GameObject mYellowBlock;
     private GameObject mGreenBlock;
-    private float mBlueHeight;
+    private float mBrownHeight;
 
     // Start is called before the first frame update
     void Start()
     {
         mBrownBlock = transform.Find("BrownBlock").gameObject;
         mBlueBlock = transform.Find("BlueBlock").gameObject;
-        mGreenBlock = transform.Find("BlueBlock").gameObject;
-        mBlueHeight = mBlueBlock.GetComponent<Renderer>().bounds.size.y;
+        mGreenBlock = transform.Find("GreenBlock").gameObject;
+        mYellowBlock = transform.Find("YellowBlock").gameObject;
+        mBrownHeight = mBrownBlock.GetComponent<Renderer>().bounds.size.y;
 
     }
 
-    // Return true if puzzle is solved.
+    // Return true if yellow block is on top of brown block
     bool IsSolved()
     {
-        Vector3 RedPosition = mBrownBlock.transform.position;
-        Vector3 BluePosition = mBlueBlock.transform.position;
-        if (RedPosition.y > BluePosition.y
-        && (RedPosition.y - BluePosition.y) < mBlueHeight + tolerance
-        && Mathf.Abs(RedPosition.x - BluePosition.x) < tolerance
-        && Mathf.Abs(RedPosition.z - BluePosition.z) < tolerance)
+        Vector3 YellowPosition = mYellowBlock.transform.position;
+        Vector3 BrownPosition = mBrownBlock.transform.position;
+        if (YellowPosition.y > BrownPosition.y
+        && (YellowPosition.y - BrownPosition.y) < mBrownHeight + tolerance
+        && Mathf.Abs(YellowPosition.x - BrownPosition.x) < tolerance
+        && Mathf.Abs(YellowPosition.z - BrownPosition.z) < tolerance)
         {
-            // Red block on top of blue block
+            // Yellow block, green block, blue block on top of brown block
             return true;
         }
         return false;
@@ -41,9 +42,11 @@ public class SimpleBlockPuzzleController : MonoBehaviour
     {
         if (IsSolved() == true)
         {
-            // Puzzle has been solved. Turn blocks yellow.
-            mBrownBlock.GetComponent<Renderer>().material.color = Color.yellow;
-            mBlueBlock.GetComponent<Renderer>().material.color = Color.yellow;
+            // Puzzle has been solved. Turn blocks white.
+            mBrownBlock.GetComponent<Renderer>().material.color = Color.white;
+            mBlueBlock.GetComponent<Renderer>().material.color = Color.white;
+            mGreenBlock.GetComponent<Renderer>().material.color = Color.white;
+            mYellowBlock.GetComponent<Renderer>().material.color = Color.white;
         }
     }
 }
