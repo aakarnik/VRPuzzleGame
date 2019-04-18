@@ -1080,7 +1080,7 @@ GameObject:
   - component: {fileID: 253587545}
   - component: {fileID: 253587544}
   m_Layer: 0
-  m_Name: PieceController (2)
+  m_Name: PieceController3
   m_TagString: controller3
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1098,7 +1098,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: efa62d49c36550e47a25972764ed94f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  unitsPerDegree: 0.001
+  unitsPerDegree: 0.003
   PieceNumber: 3
   DialNumber1: 1
   DialNumber2: 2
@@ -1919,7 +1919,7 @@ GameObject:
   - component: {fileID: 472177578}
   - component: {fileID: 472177577}
   m_Layer: 0
-  m_Name: PieceController (1)
+  m_Name: PieceController2
   m_TagString: controller2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1937,7 +1937,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: efa62d49c36550e47a25972764ed94f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  unitsPerDegree: 0.001
+  unitsPerDegree: 0.003
   PieceNumber: 2
   DialNumber1: 1
   DialNumber2: 2
@@ -1972,8 +1972,8 @@ GameObject:
   - component: {fileID: 540467945}
   - component: {fileID: 540467949}
   m_Layer: 0
-  m_Name: Place3
-  m_TagString: placer3
+  m_Name: Place1
+  m_TagString: placer1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2048,7 +2048,7 @@ Transform:
   m_LocalScale: {x: 0.00001, y: 0.5, z: 0.75}
   m_Children: []
   m_Father: {fileID: 881860965}
-  m_RootOrder: 2
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &540467949
 MonoBehaviour:
@@ -2063,7 +2063,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PieceNumber: 3
-  xTolerance: 0.001
 --- !u!1 &544797391
 GameObject:
   m_ObjectHideFlags: 0
@@ -2467,7 +2466,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PieceNumber: 4
-  xTolerance: 0.001
 --- !u!1 &615919592
 GameObject:
   m_ObjectHideFlags: 0
@@ -3093,7 +3091,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PieceNumber: 2
-  xTolerance: 0.001
 --- !u!1001 &764228313
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3298,8 +3295,8 @@ GameObject:
   - component: {fileID: 786920473}
   - component: {fileID: 786920477}
   m_Layer: 0
-  m_Name: Place1
-  m_TagString: placer1
+  m_Name: Place3
+  m_TagString: placer3
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3374,7 +3371,7 @@ Transform:
   m_LocalScale: {x: 0.00001, y: 0.5, z: 0.75}
   m_Children: []
   m_Father: {fileID: 881860965}
-  m_RootOrder: 0
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &786920477
 MonoBehaviour:
@@ -3389,7 +3386,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PieceNumber: 1
-  xTolerance: 0.001
 --- !u!1001 &825642414
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3871,9 +3867,9 @@ Transform:
   m_LocalPosition: {x: -0.72, y: 0.283, z: 11.946}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 786920476}
-  - {fileID: 755743178}
   - {fileID: 540467948}
+  - {fileID: 755743178}
+  - {fileID: 786920476}
   - {fileID: 590614651}
   m_Father: {fileID: 0}
   m_RootOrder: 7
@@ -6324,7 +6320,7 @@ GameObject:
   - component: {fileID: 1488694458}
   - component: {fileID: 1488694459}
   m_Layer: 0
-  m_Name: PieceController
+  m_Name: PieceController1
   m_TagString: controller1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6357,7 +6353,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: efa62d49c36550e47a25972764ed94f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  unitsPerDegree: 0.001
+  unitsPerDegree: 0.003
   PieceNumber: 1
   DialNumber1: 1
   DialNumber2: 2
@@ -6448,7 +6444,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1525015014}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.24768215, y: -0.71, z: -2.581}
+  m_LocalPosition: {x: -0.24768215, y: 0.255, z: -2.438}
   m_LocalScale: {x: 0.05, y: 0.5, z: 0.75}
   m_Children: []
   m_Father: {fileID: 376219476}
@@ -7413,7 +7409,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1700774074}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.24768215, y: 0.20403564, z: -2.53}
+  m_LocalPosition: {x: -0.24768215, y: -0.399, z: -2.53}
   m_LocalScale: {x: 0.05, y: 0.5, z: 0.75}
   m_Children: []
   m_Father: {fileID: 376219476}
@@ -7965,7 +7961,7 @@ GameObject:
   - component: {fileID: 2095880562}
   - component: {fileID: 2095880561}
   m_Layer: 0
-  m_Name: PieceController (3)
+  m_Name: PieceController4
   m_TagString: controller4
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7983,7 +7979,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: efa62d49c36550e47a25972764ed94f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  unitsPerDegree: 0.001
+  unitsPerDegree: 0.003
   PieceNumber: 4
   DialNumber1: 1
   DialNumber2: 2

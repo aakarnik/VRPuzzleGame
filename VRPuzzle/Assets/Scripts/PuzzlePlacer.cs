@@ -12,7 +12,7 @@ public class PuzzlePlacer : MonoBehaviour
     //tolerance should allow the player to win when the piece is within a certain area of the placer
     //set to the number of units the piece moves along both axis
 
-    public float xTolerance = 0.001f;
+    private float xTolerance = 0.001f;
     private float yTolerance = .05f;
     private float zTolerance = .05f;
 
@@ -26,8 +26,7 @@ public class PuzzlePlacer : MonoBehaviour
 
     bool isSolved()
     {
-        //Needs TESTING
-
+        //Working
         Vector3 piecePosition = puzzlePiece.transform.position;
         Vector3 placePosition = puzzlePlacementObj.transform.position;
 
@@ -38,22 +37,20 @@ public class PuzzlePlacer : MonoBehaviour
             return true;
         }
 
-        /*
-    if ((piecePosition.x >= placePosition.x) &&
-            piecePosition.y == (placePosition.y) &&
-            piecePosition.z == (placePosition.z))
-    {
-        return true;
-    } */
         return false;
     }
 
     // Update is called once per frame
     void Update()
     {
+        //Working
         if (isSolved() == true)
         {
             puzzlePlacementObj.GetComponent<Renderer>().material.color = Color.yellow;
+        }
+        else
+        {
+            puzzlePlacementObj.GetComponent<Renderer>().material.color = Color.grey;
         }
         
     }
