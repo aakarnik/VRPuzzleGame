@@ -20,6 +20,9 @@ TagManager:
   - controller2
   - controller3
   - controller4
+  - Slider1
+  - Slider2
+  - Final_Key
   layers:
   - Default
   - TransparentFX
