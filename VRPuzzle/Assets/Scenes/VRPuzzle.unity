@@ -2601,7 +2601,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1161953214}
-  - component: {fileID: 1161953215}
   m_Layer: 0
   m_Name: PuzzleRoom1
   m_TagString: Untagged
@@ -2627,19 +2626,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1161953215
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1161953213}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c1f91a24f4d8c5f469e1b51ea9b3d687, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tolerance: 0
 --- !u!4 &1180666379 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400002, guid: b7768e1703027114b8fb81cb29192dc8,
@@ -5171,7 +5157,7 @@ HingeJoint:
   m_Anchor: {x: 0, y: 0.9999979, z: 0}
   m_Axis: {x: 0, y: 1, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0.24800003, y: 0.8029997, z: -0.21599996}
+  m_ConnectedAnchor: {x: 0.24800003, y: 0.8029982, z: -0.21599996}
   m_UseSpring: 0
   m_Spring:
     spring: 0
@@ -5508,7 +5494,7 @@ HingeJoint:
   m_Anchor: {x: 0, y: 0.9999979, z: 0}
   m_Axis: {x: 0, y: 1, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.23400009, y: 0.8029997, z: -0.21100032}
+  m_ConnectedAnchor: {x: -0.23400009, y: 0.8029982, z: -0.21100032}
   m_UseSpring: 0
   m_Spring:
     spring: 0
@@ -6537,7 +6523,7 @@ HingeJoint:
   m_Anchor: {x: 0, y: 0.9999979, z: 0}
   m_Axis: {x: 0, y: 1, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0.24800003, y: 0.8029997, z: -0.2159977}
+  m_ConnectedAnchor: {x: 0.24800003, y: 0.8029982, z: -0.2159977}
   m_UseSpring: 0
   m_Spring:
     spring: 0
@@ -6795,7 +6781,7 @@ HingeJoint:
   m_Anchor: {x: 0, y: 0.9999979, z: 0}
   m_Axis: {x: 0, y: 1, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0.24800003, y: 0.8029997, z: -0.2159977}
+  m_ConnectedAnchor: {x: 0.24800062, y: 0.8029982, z: -0.2159977}
   m_UseSpring: 0
   m_Spring:
     spring: 0
@@ -7236,7 +7222,7 @@ HingeJoint:
   m_Anchor: {x: 0, y: 0.9999979, z: 0}
   m_Axis: {x: 0, y: 1, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.23400009, y: 0.8029997, z: -0.21100044}
+  m_ConnectedAnchor: {x: -0.23400068, y: 0.8029982, z: -0.21100044}
   m_UseSpring: 0
   m_Spring:
     spring: 0
@@ -7552,7 +7538,7 @@ HingeJoint:
   m_Anchor: {x: 0, y: 0.9999979, z: 0}
   m_Axis: {x: 0, y: 1, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.23400009, y: 0.8029997, z: -0.21100271}
+  m_ConnectedAnchor: {x: -0.23400009, y: 0.8029982, z: -0.21100271}
   m_UseSpring: 0
   m_Spring:
     spring: 0
@@ -8113,7 +8099,7 @@ HingeJoint:
   m_Anchor: {x: 0, y: 0.9999979, z: 0}
   m_Axis: {x: 0, y: 1, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0.24800003, y: 0.8029997, z: -0.21599758}
+  m_ConnectedAnchor: {x: 0.24800003, y: 0.8029982, z: -0.21599758}
   m_UseSpring: 0
   m_Spring:
     spring: 0
@@ -9397,7 +9383,7 @@ HingeJoint:
   m_Anchor: {x: 0, y: 0.9999979, z: 0}
   m_Axis: {x: 0, y: 1, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.23400009, y: 0.8029997, z: -0.21100044}
+  m_ConnectedAnchor: {x: -0.23400009, y: 0.8029982, z: -0.21100044}
   m_UseSpring: 0
   m_Spring:
     spring: 0
