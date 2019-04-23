@@ -1,8 +1,8 @@
 # VR Puzzle Game
 
-## Description: A simple, two level puzzle game which allows players to pick up and place objects, use dials, etc. to complete and win the game. 
+**Description**: A simple, two level puzzle game which allows players to pick up and place objects, use dials, etc. to complete and win the game. 
 
-## Contributors: Martha Brandt, Anuya Karnik
+**Contributors**: Martha Brandt, Anuya Karnik
 
 ### Features to be added:
 
