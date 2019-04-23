@@ -20,6 +20,10 @@ TagManager:
   - controller2
   - controller3
   - controller4
+  - mBrownBlock
+  - block1
+  - block2
+  - block3
   layers:
   - Default
   - TransparentFX
