@@ -24,6 +24,9 @@ TagManager:
   - block1
   - block2
   - block3
+  - Placer1
+  - Placer2
+  - Placer3
   layers:
   - Default
   - TransparentFX
