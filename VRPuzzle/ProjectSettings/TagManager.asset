@@ -4,28 +4,35 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - projectile
-  - FxTemporaire
-  - puzpiece1
-  - Dial1
-  - Dial2
-<<<<<<< HEAD
-=======
-  - puzpiece2
   - puzpiece3
   - puzpiece4
-  - placer1
+  - Dial1
+  - controller4
+  - controller1
+  - puzpiece1
+  - Dial2
   - placer2
   - placer3
+  - placer1
   - placer4
-  - controller1
-  - controller2
+  - puzpiece2
   - controller3
-  - controller4
-  - Slider1
+  - controller2
+  - projectile
+  - FxTemporaire
+  - Placer2
+  - Placer3
+  - block2
+  - Placer1
+  - mBrownBlock
+  - block1
+  - block3
   - Slider2
+  - Slider1
   - Final_Key
->>>>>>> fb368e83f916a99ae71d8be13814106fc401e5f5
+  - grey1
+  - grey2
+  - grey3
   layers:
   - Default
   - TransparentFX
@@ -35,7 +42,7 @@ TagManager:
   - UI
   - 
   - 
-  - PostProcessing
+  - 
   - 
   - 
   - 
