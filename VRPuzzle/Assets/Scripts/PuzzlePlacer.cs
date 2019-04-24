@@ -24,7 +24,7 @@ public class PuzzlePlacer : MonoBehaviour
      
     }
 
-    bool isSolved()
+    public bool isSolved()
     {
         //Working
         Vector3 piecePosition = puzzlePiece.transform.position;
@@ -35,6 +35,7 @@ public class PuzzlePlacer : MonoBehaviour
                 piecePosition.y < (placePosition.y + yTolerance) && piecePosition.y > (placePosition.y - yTolerance) &&
                 piecePosition.z < (placePosition.z + zTolerance) && piecePosition.z > (placePosition.z - zTolerance)) {
             return true;
+            
         }
 
         return false;
