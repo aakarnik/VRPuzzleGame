@@ -23,6 +23,7 @@ TagManager:
   - Slider1
   - Slider2
   - Final_Key
+  - Spawner1
   layers:
   - Default
   - TransparentFX
