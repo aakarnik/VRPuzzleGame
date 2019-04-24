@@ -20,10 +20,16 @@ TagManager:
   - controller2
   - controller3
   - controller4
+<<<<<<< HEAD
   - mBrownBlock
   - block1
   - block2
   - block3
+=======
+  - Slider1
+  - Slider2
+  - Final_Key
+>>>>>>> fb368e83f916a99ae71d8be13814106fc401e5f5
   layers:
   - Default
   - TransparentFX
