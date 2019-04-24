@@ -9107,8 +9107,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   unitsPerDegree: 0.003
   PieceNumber: 2
-  DialNumber: 0
-  axis: {x: 0, y: 1, z: 0}
+  DialNumber1: 1
+  DialNumber2: 2
+  axis1: {x: 0, y: 1, z: 0}
+  axis2: {x: 0, y: 0, z: 1}
 --- !u!54 &9043465913840850592
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -9474,8 +9476,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   unitsPerDegree: 0.003
   PieceNumber: 3
-  DialNumber: 0
-  axis: {x: 0, y: 1, z: 0}
+  DialNumber1: 1
+  DialNumber2: 2
+  axis1: {x: 0, y: 1, z: 0}
+  axis2: {x: 0, y: 0, z: 1}
 --- !u!4 &9043465913957217339
 Transform:
   m_ObjectHideFlags: 0
@@ -11686,8 +11690,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   unitsPerDegree: 0.003
   PieceNumber: 1
-  DialNumber: 0
-  axis: {x: 0, y: 1, z: 0}
+  DialNumber1: 1
+  DialNumber2: 2
+  axis1: {x: 0, y: 1, z: 0}
+  axis2: {x: 0, y: 0, z: 1}
 --- !u!1 &9043465914772826331
 GameObject:
   m_ObjectHideFlags: 0
@@ -12594,8 +12600,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   unitsPerDegree: 0.003
   PieceNumber: 4
-  DialNumber: 0
-  axis: {x: 0, y: 1, z: 0}
+  DialNumber1: 1
+  DialNumber2: 2
+  axis1: {x: 0, y: 1, z: 0}
+  axis2: {x: 0, y: 0, z: 1}
 --- !u!1 &9043465915323604881
 GameObject:
   m_ObjectHideFlags: 0
