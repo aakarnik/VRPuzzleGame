@@ -3,7 +3,30 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - projectile
+  - FxTemporaire
+  - puzpiece1
+  - Dial1
+  - Dial2
+  - puzpiece2
+  - puzpiece3
+  - puzpiece4
+  - placer1
+  - placer2
+  - placer3
+  - placer4
+  - controller1
+  - controller2
+  - controller3
+  - controller4
+  - mBrownBlock
+  - block1
+  - block2
+  - block3
+  - Placer1
+  - Placer2
+  - Placer3
   layers:
   - Default
   - TransparentFX
@@ -13,7 +36,7 @@ TagManager:
   - UI
   - 
   - 
-  - 
+  - PostProcessing
   - 
   - 
   - 

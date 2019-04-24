@@ -5,47 +5,37 @@ using UnityEngine;
 public class Puzzle2Controller : MonoBehaviour
 {
 
-    //The height at which the blocks can rest on the base 
-    public float tolerance;
+ 
 
     //Base of the puzzle
-    private GameObject mBrownBlock;
-
-    //x position
-    public float xconstraint1;
-    public float xconstraint2;
-
-    //y position
-    public float zconstraint1;
-    public float zconstraint2;
-
-    //color
-    private Color blockColor;
-
+    private GameObject BlockPlacers;
     //TODO: Create one private GameObject variable named "puzzle1block"
     private GameObject puzzle1block;
 
     /** TODO: Create one public int variable named "blockNum" to store the number of the block number 
-               This will be helpful to retrieve each block */
+              This will be helpful to retrieve each block */
 
-    public int blockNum = 0;
+    public int blockNum = 1;
 
-    private float mBrownHeight;
+    //tolerance should allow the player to win when the piece is within a certain area of the placer
+    //set to the number of units the piece moves along both axis
+
+    public float xTolerance = 0.001f;
+    public float yTolerance = .05f;
+    public float zTolerance = .05f;
+
+    //color
+    //private Color blockColor;
+
+
+
+   
 
     // Start is called before the first frame update
     void Start()
     {
-        /** TODO: Assign a tag name to the BrownBlock in Unity 
-                  Set "mBrownBlock" equal to the object with the Brownblock tag  
-                 (see PuzzlePlacer.cs line 22 for reference) */
-        mBrownBlock = GameObject.FindGameObjectWithTag("mBrownBlock").gameObject;
-
-        /** TODO: Assign a consistent numbered tag to every puzzle block for Puzzle 1 (block1, block2, block3, etc.)
-                  Set "puzzle1block" equal to the object with the tag string and the "blockNum" variable 
-                 (see PuzzlePlacer.cs line 23 for reference)*/
+        BlockPlacers = GameObject.FindGameObjectWithTag("Placer" + blockNum).gameObject;
         puzzle1block = GameObject.FindGameObjectWithTag("block" + blockNum).gameObject;
-
-        mBrownHeight = mBrownBlock.GetComponent<Renderer>().bounds.size.y;
 
         //Retrieve block color
         //blockColor = puzzle1block.Shader.Find("_color");
@@ -60,24 +50,25 @@ public class Puzzle2Controller : MonoBehaviour
          */
 
         Vector3 BlockPosition = puzzle1block.transform.position;
-
-        //Storing the position of the Brown Base Block
-        Vector3 BrownPosition = mBrownBlock.transform.position;
+        Vector3 BlockplacerPosition = BlockPlacers.transform.position;
 
         /** TODO: Complete the if-statement below
          *        Use "BlockPosition" instead of "YellowPosition"
          *        Now the code should work for all blocks instead of just the Yellow Block
          */
 
-        if ((BlockPosition.y >= BrownPosition.y + mBrownHeight) &&
-                 BlockPosition.x < (BrownPosition.x + xconstraint1 ) && BlockPosition.x > (BrownPosition.x - xconstraint2) &&
-                 BlockPosition.z < (BrownPosition.z + zconstraint1 ) && BlockPosition.z > (BrownPosition.z - zconstraint2 ))
+
+        if ((BlockPosition.y >= BlockplacerPosition.y + yTolerance) &&
+                BlockPosition.x < (BlockplacerPosition.x + xTolerance) && BlockPosition.x > (BlockplacerPosition.x - xTolerance) &&
+                BlockPosition.z < (BlockplacerPosition.z + zTolerance) && BlockPosition.z > (BlockplacerPosition.z - zTolerance))
         {
             return true;
         }
 
         return false;
     }
+
+
     void Update()
     {
         if (IsSolved() == true)
@@ -85,18 +76,15 @@ public class Puzzle2Controller : MonoBehaviour
             // Puzzle has been solved. Turn blocks white.
 
             //TODO: Change the color of the "Puzzle1Block" to white
-            puzzle1block.GetComponent<Renderer>().material.color = Color.white;
+            BlockPlacers.GetComponent<Renderer>().material.color = Color.white;
 
         }
 
-       // else {
-
-            //puzzle1block.GetComponent<Renderer>().material.color = blockColor;
-
-        //}
-
-        // Add this script to the all blocks
-        // Test on Oculus to see if this functions so far
+        else
+        {
+            BlockPlacers.GetComponent<Renderer>().material.color = Color.grey;
+        }
+       
     }
 }
  
