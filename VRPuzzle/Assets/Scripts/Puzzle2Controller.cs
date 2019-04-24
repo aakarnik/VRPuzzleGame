@@ -82,7 +82,7 @@ public class Puzzle2Controller : MonoBehaviour
 
         else
         {
-            BlockPlacers.GetComponent<Renderer>().material.color = Color.blue;
+            BlockPlacers.GetComponent<Renderer>().material.color = Color.grey;
         }
        
     }
