@@ -12,7 +12,6 @@ public class PuzzlePlacer : MonoBehaviour
     //tolerance should allow the player to win when the piece is within a certain area of the placer
     //set to the number of units the piece moves along both axis
 
-    private float xTolerance = 0.001f;
     private float yTolerance = .05f;
     private float zTolerance = .05f;
 
@@ -31,9 +30,8 @@ public class PuzzlePlacer : MonoBehaviour
         Vector3 placePosition = puzzlePlacementObj.transform.position;
 
         
-        if((piecePosition.x >= placePosition.x + xTolerance) &&
-                piecePosition.y < (placePosition.y + yTolerance) && piecePosition.y > (placePosition.y - yTolerance) &&
-                piecePosition.z < (placePosition.z + zTolerance) && piecePosition.z > (placePosition.z - zTolerance)) {
+        if(piecePosition.y < (placePosition.y + yTolerance) && piecePosition.y > (placePosition.y - yTolerance) &&
+           piecePosition.z < (placePosition.z + zTolerance) && piecePosition.z > (placePosition.z - zTolerance)) {
             return true;
             
         }

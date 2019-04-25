@@ -67,6 +67,7 @@ public class BoxOpenerScript : MonoBehaviour
         {
             FinalObject.SetActive(true);
             Lid.SetActive(false);
+            key_obj.SetActive(false);
         }
     }
 }
