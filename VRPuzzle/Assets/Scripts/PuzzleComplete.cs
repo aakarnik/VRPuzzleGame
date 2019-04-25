@@ -25,6 +25,7 @@ public class PuzzleComplete : MonoBehaviour
     void Update()
     {
         isPuzzleSolved = true;
+
         for(int i = 0; i < PuzzlePieces.Length; i++)
         {
             if(PuzzlePieces[i].isSolved() == false)
