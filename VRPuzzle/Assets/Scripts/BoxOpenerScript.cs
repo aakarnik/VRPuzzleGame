@@ -20,7 +20,7 @@ public class BoxOpenerScript : MonoBehaviour
 
     //Key and key placer
     GameObject key_placer;
-    GameObject key_obj;
+    public GameObject key_obj;
 
     //tolerance
     public float xTolerance = 0.001f;
@@ -31,7 +31,7 @@ public class BoxOpenerScript : MonoBehaviour
     void Start()
     {
         key_placer = GameObject.FindGameObjectWithTag("key_placer").gameObject;
-        key_obj = GameObject.FindGameObjectWithTag("Final_Key").gameObject;
+        //key_obj = GameObject.FindGameObjectWithTag("Final_Key").gameObject;
 
         Lid = GameObject.FindGameObjectWithTag("Slider1").gameObject;
 
