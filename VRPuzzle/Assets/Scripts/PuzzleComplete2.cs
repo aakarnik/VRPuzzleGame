@@ -20,7 +20,7 @@ public class PuzzleComplete2 : MonoBehaviour
     {
         //The key object is visible before the puzzle is solved
         NextLevelKey.SetActive(true);
-        //isPuzzleSolved = true;
+        
     }
 
     void PopEffect() {
@@ -50,7 +50,7 @@ public class PuzzleComplete2 : MonoBehaviour
 
         }
 
-        //NextLevelKey.SetActive(false);
+        
     }
 }
 
