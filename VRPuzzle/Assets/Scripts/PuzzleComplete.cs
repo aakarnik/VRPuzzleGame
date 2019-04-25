@@ -7,6 +7,8 @@ public class PuzzleComplete : MonoBehaviour
     //Contains the reference of the Key or the Dial
     public GameObject NextLevelKey;
 
+    public GameObject Effectobject;
+
     //the count variable stores the number of pieces arranged
     public PuzzlePlacer[] PuzzlePieces;
 
@@ -21,7 +23,14 @@ public class PuzzleComplete : MonoBehaviour
         //isPuzzleSolved = true;
     }
 
-    
+    void PopEffect()
+    {
+
+        GameObject pop = Instantiate(Effectobject, NextLevelKey.transform.position, NextLevelKey.transform.rotation);
+        Destroy(pop, 5);
+
+    }
+
     void Update()
     {
         isPuzzleSolved = true;
@@ -37,6 +46,8 @@ public class PuzzleComplete : MonoBehaviour
         if (isPuzzleSolved == true)
         {
             NextLevelKey.SetActive(true);
+            PopEffect();
+
         }
 
         //NextLevelKey.SetActive(false);
