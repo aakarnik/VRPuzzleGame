@@ -37,6 +37,8 @@ TagManager:
   - grey5
   - block4
   - block5
+  - key_placer
+  - Final_Win
   layers:
   - Default
   - TransparentFX
