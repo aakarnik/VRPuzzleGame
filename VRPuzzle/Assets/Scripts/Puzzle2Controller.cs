@@ -5,8 +5,6 @@ using UnityEngine;
 public class Puzzle2Controller : MonoBehaviour
 {
 
-
-
     //Base of the puzzle
     private GameObject BlockPlacers;
     //TODO: Create one private GameObject variable named "puzzle1block"
@@ -24,12 +22,6 @@ public class Puzzle2Controller : MonoBehaviour
     public float yTolerance = .05f;
     public float zTolerance = .05f;
 
-    //color
-    //private Color blockColor;
-
-
-
-
 
     // Start is called before the first frame update
     void Start()
@@ -37,13 +29,10 @@ public class Puzzle2Controller : MonoBehaviour
         BlockPlacers = GameObject.FindGameObjectWithTag("grey" + blockNum).gameObject;
         puzzle1block = GameObject.FindGameObjectWithTag("block" + blockNum).gameObject;
 
-        //Retrieve block color
-        //blockColor = puzzle1block.Shader.Find("_color");
-
     }
 
     // Return true if yellow block is on top of brown block
-    bool IsSolved()
+    public bool IsSolved()
     {
         /** TODO: Create a Vector3 variable name "BlockPosition"
          *        Store the position of the "puzzle1block" in it (just like BrownPosition)
