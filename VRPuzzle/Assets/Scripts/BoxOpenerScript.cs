@@ -23,9 +23,9 @@ public class BoxOpenerScript : MonoBehaviour
     GameObject key_obj;
 
     //tolerance
-    public float xTolerance = 0.001f;
-    public float yTolerance = .005f;
-    public float zTolerance = .005f;
+    private float xTolerance = .005f;
+    private float yTolerance = .001f;
+    private float zTolerance = .005f;
 
     // Start is called before the first frame update
     void Start()
