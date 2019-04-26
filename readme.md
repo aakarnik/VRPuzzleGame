@@ -51,3 +51,4 @@ All External Libraries were used to design the rooms and furniture. Items includ
 - [Dark Fantasy Kit](https://assetstore.unity.com/packages/3d/environments/fantasy/dark-fantasy-kit-free-127925)
 - [Classic Picture Frame](https://assetstore.unity.com/packages/3d/props/furniture/classic-picture-frame-59038)
 - [Free Homewares Asset Pack](https://assetstore.unity.com/packages/3d/props/free-homewares-asset-pack-142878)
+- Source Image for [Puzzle 2](https://www.pexels.com/photo/black-and-gray-camera-near-gray-skeleton-keys-1416847/) and other images for textures from [Pexels](https://www.pexels.com).
