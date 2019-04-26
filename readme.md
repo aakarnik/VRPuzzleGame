@@ -7,7 +7,7 @@
 ### Features to be added:
 
 - [x] Room 1 Backdrop and Furniture - M
-- [x] Staircase to Room2 - M
+- [x] Staircase to Room 2 - M
 - [x] Room 2 Backdrop and Furniture - A
 - [x] Create Puzzle 1 - M
 - [x] Code for Puzzle 1 - M
@@ -44,5 +44,10 @@
 - BoxOpenerScript.cs - A
 
 ### External Libraries Used:
+
+All External Libraries were used to design the rooms and furniture. Items included tables, chairs, shelves, sofas, cabinets, picture frames, etc.
+
+- [Big Furniture Pack](https://assetstore.unity.com/packages/3d/props/furniture/big-furniture-pack-7717)
 - [Dark Fantasy Kit](https://assetstore.unity.com/packages/3d/environments/fantasy/dark-fantasy-kit-free-127925)
-- 
+- [Classic Picture Frame](https://assetstore.unity.com/packages/3d/props/furniture/classic-picture-frame-59038)
+- [Free Homewares Asset Pack](https://assetstore.unity.com/packages/3d/props/free-homewares-asset-pack-142878)
