@@ -25,6 +25,8 @@
 
 - Puzzle Blocks - M
 - Puzzle Placer Blocks - M
+- Room Walls - M, A
+- Ceilings - M
 - Picture Puzzle Pieces - A
 - Picture Puzzle Placer Frames - A
 - Dial Controllers for moving puzzle pieces - A
@@ -42,4 +44,5 @@
 - BoxOpenerScript.cs - A
 
 ### External Libraries Used:
+- ![Dark Fantasy Kit](https://assetstore.unity.com/packages/3d/environments/fantasy/dark-fantasy-kit-free-127925)
 - 
