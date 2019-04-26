@@ -44,5 +44,5 @@
 - BoxOpenerScript.cs - A
 
 ### External Libraries Used:
-- ![Dark Fantasy Kit](https://assetstore.unity.com/packages/3d/environments/fantasy/dark-fantasy-kit-free-127925)
+- [Dark Fantasy Kit](https://assetstore.unity.com/packages/3d/environments/fantasy/dark-fantasy-kit-free-127925)
 - 
