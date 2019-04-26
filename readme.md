@@ -1,10 +1,12 @@
 # VR Puzzle Game
 
-**Description**: A simple, two level puzzle game which allows players to pick up and place objects, use dials, etc. to complete and win the game. 
+**Description**: 
+
+A simple, two level puzzle game which allows players to pick up and place objects , use dials, etc. using the Oculus headset and controllers to complete and win the game. The goal of the puzzle is to find a key and open the treasure box with it. The player needs to solve two puzzles to find the key.
 
 **Contributors**: Martha Brandt (M), Anuya Karnik (A)
 
-### Features to be added:
+### Features:
 
 - [x] Room 1 Backdrop and Furniture - M
 - [x] Staircase to Room 2 - M
