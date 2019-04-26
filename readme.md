@@ -18,9 +18,21 @@
 - [x] Declare that Game is won after final prize is picked up - A
 - [x] Instructions for Puzzle 1 - M
 - [x] Instructions for Puzzle 2 - A
+- [x] Complete Readme.md for GitHub - A
 
-### Items Created:
-- (List of prefabs)
+### Objects Created in Unity:
+*Puzzle 1:* (M)
+- Puzzle Blocks
+- Puzzle Placer Blocks
+- Instruction Text Mesh for Puzzle 1
+
+*Puzzle 2* (A)
+- Picture Puzzle Pieces
+- Picture Puzzle Placer Frames
+- Dial Controllers for moving puzzle pieces
+- Treasure Box with Key Placer
+- Key
+- Instruction Text Meshes for Puzzle 2
 
 ### External Libraries Used:
 - (List of External Asset Libraries)
